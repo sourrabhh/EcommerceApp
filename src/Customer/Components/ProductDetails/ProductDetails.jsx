@@ -99,9 +99,8 @@ export default function ProductDetails() {
           </ol> */}
         </nav>
 
-        <section className='grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 pt-10'>
-            
-                {/* Image gallery */}
+            {/* ************ Image gallery ************* */}
+        <section className='grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 pt-10'>  
             <div className="flex flex-col items-center">
                 <div className="overflow:hidden rounded-lg max-w-[30rem] max-h-[35rem]">
                     <img
