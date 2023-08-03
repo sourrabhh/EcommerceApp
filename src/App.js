@@ -1,26 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Cart from './Customer/Components/Cart/Cart';
-// import Checkout from './Customer/Components/Checkout/Checkout';
 import Footer from './Customer/Components/Footer/Footer';
-import Navigation from './Customer/Components/Navigation/Navigation';
-import OrderPage from './Customer/Components/Order/OrderPage';
-// import Product from './Customer/Components/Product/Product';
-// import ProductDetails from './Customer/Components/ProductDetails/ProductDetails';
-// import HomePage from './Customer/Pages/HomePage/HomePage';
+
+import CustomerRouters from './Routers/CustomerRouters';
+
 
 function App() {
   return (
     <div className="">
-      <Navigation />
+      {/* <Navigation /> */}
         <div>
-          {/* <HomePage /> */}
-          {/* <Product /> */}
-          {/* <ProductDetails /> */}
-          {/* <Cart /> */}
-          {/* <Checkout /> */}
-          <OrderPage />
+          <Routes>
+              <Route path='/' element={<CustomerRouters />}></Route>
+          </Routes>  
         </div>
-        <Footer />
     </div>
   );
 }
